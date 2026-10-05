@@ -18,7 +18,7 @@ Visitors can enter their height in feet and inches or in centimeters. The page p
 1. Create a new public repository and upload all four files to the root.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose `main` and `/ (root)`, then click **Save**.
-4. After a minute or two, the page will be live at `[https://github.com/nubestdoctortaller/tallest-soccer-players-height-compare]`.
+4. After a minute or two, the page will be live at [https://github.com/nubestdoctortaller/tallest-soccer-players-height-compare](https://github.com/nubestdoctortaller/tallest-soccer-players-height-compare).
 
 ## Updating the data
 
