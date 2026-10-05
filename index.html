@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Do You Measure Up Against the Tallest Soccer Players?</title>
+  <meta name="description" content="Enter your height and see where you'd rank among the 10 tallest active soccer players in the world in 2026.">
+  <meta property="og:title" content="How Do You Measure Up Against the Tallest Soccer Players?">
+  <meta property="og:description" content="Enter your height and see where you'd rank among the 10 tallest active soccer players of 2026.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>How do you measure up against soccer's tallest players?</h1>
+      <p class="lead">Every one of the 10 tallest active pros in 2026 stands at least 6'7". Enter your height to see where you'd land in the lineup.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="form-title">
+      <h2 id="form-title" class="visually-hidden">Enter your height</h2>
+      <div class="units" role="radiogroup" aria-label="Height units">
+        <button type="button" class="unit" data-unit="imperial" role="radio" aria-checked="true">Feet and inches</button>
+        <button type="button" class="unit" data-unit="metric" role="radio" aria-checked="false">Centimeters</button>
+      </div>
+
+      <div class="fields" id="imperial-fields">
+        <label>
+          <span>Feet</span>
+          <input id="feet" type="number" inputmode="numeric" min="3" max="8" step="1" value="5">
+        </label>
+        <label>
+          <span>Inches</span>
+          <input id="inches" type="number" inputmode="decimal" min="0" max="11.9" step="0.5" value="10">
+        </label>
+      </div>
+
+      <div class="fields" id="metric-fields" hidden>
+        <label>
+          <span>Centimeters</span>
+          <input id="cm" type="number" inputmode="decimal" min="91" max="244" step="0.5" value="178">
+        </label>
+      </div>
+
+      <button type="button" id="compare" class="primary">Compare my height</button>
+      <p id="error" class="error" role="alert"></p>
+    </section>
+
+    <section class="results" aria-labelledby="results-title">
+      <div class="results-head">
+        <h2 id="results-title">The lineup</h2>
+        <p id="verdict" class="verdict" aria-live="polite">Enter your height above to join the lineup.</p>
+      </div>
+      <ol id="lineup" class="lineup"></ol>
+      <p class="source">Player heights are the 2026 figures used in the full Doctor Taller ranking. The pro average refers to outfield players.</p>
+    </section>
+
+    <section class="facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">What the list shows</h2>
+      <p>Seven of the ten tallest active players are goalkeepers and two are center-backs. England's Kyle Hudlin is the only striker. Clubs tend to spot unusually tall teenagers early and steer them toward the positions where reach matters most.</p>
+      <p>Playing soccer doesn't make anyone taller. Adult height comes mostly from genetics, and the position simply follows.</p>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <h2 id="cta-title">See the full rankings</h2>
+      <p>Club and league details for every player, honorable mentions like Thibaut Courtois, and an all-time ranking with retired legends.</p>
+      <a class="button" href="https://doctortaller.com/blogs/science-insight/top-10-tallest-soccer-players-right-now">Read the full article on Doctor Taller</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Doctor Taller</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
